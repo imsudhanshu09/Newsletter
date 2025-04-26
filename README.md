@@ -29,7 +29,7 @@ when the status code is 200 i.e., whenever the server was able to post the data 
 
 And if the status is anything other than 200 then it will return failure.html file.
 
-![image](https://github.com/user-attachments/assets/ab41501d-10d8-469a-b77d-405d24a47d71)
+![Error](https://github.com/user-attachments/assets/cd67f1fd-a251-438e-b5fd-7c35b9ea9430)
 
 
 ## 5. Mailchimp API Dashboard
