@@ -1,5 +1,5 @@
 // jshint esversion:  6
-
+require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
 const request = require('request');
@@ -51,9 +51,9 @@ app.post('/',(req,res)=>{
     const jsonData=JSON.stringify(data); //making the json object data to a single line using stringify
 
     //preparing the info according to the parameters of the below  https.request function
-    const apikeyid="45def9f93235e2e3c8d2f6a4c41bd3ec-us14";
-    const usX="14"; // in above line we have the appid hosted on us server 14;
-    const appid="3a8fee02c8";
+    const apikeyid = process.env.API_KEY; // moved to env file
+    const usX = process.env.US_REGION; // moved to env file
+    const appid = process.env.APP_ID;
     const url="https://us"+usX+".api.mailchimp.com/3.0/lists/"+appid;
 
     const options={
@@ -72,7 +72,7 @@ app.post('/',(req,res)=>{
 
         response.on("data",(data)=>{
             // console.log(JSON.parse(data));
-            console.log("yo boii");
+            console.log("Done!");
         })
     });
 
