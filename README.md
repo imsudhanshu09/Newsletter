@@ -4,40 +4,38 @@ This is a project which uses the Mailchimp API to make a NEWS LETTER webapp wher
 
 ## 1. Landing page
 
-![Landing page Screenshot](./public/assets/Readme%20screenshots/Landing.png)
-![image](https://github.com/user-attachments/assets/faee6049-c058-4fb8-85be-611ab55df805)
+![image](https://github.com/user-attachments/assets/a8bce220-4fcc-40a6-8d0c-37610df673fd)
+
 
 
 ## 2. Filling up the form
 
 Whenever we enter the details in the signup form and submit the details then a post request is called and express handles the post request using node post function written in the app.js file.
 
-![Data Entry Screenshot](./public/assets/Readme%20screenshots/Data.png)
+![image](https://github.com/user-attachments/assets/399aeb9e-1bbe-45a6-8205-d566622eda11)
+
+
 
 
 ## 3. Successfully Signed Up
 
 when the status code is 200 i.e., whenever the server was able to post the data to Mailchimp API then it returns the 200 ok status. and when 200 status is returned then express returns success.html file.
 
-![Status ok Screenshot](./public/assets/Readme%20screenshots/Success.png)
+![image](https://github.com/user-attachments/assets/b7277a14-a2d0-4fed-bc5d-7eaf3aae3e4a)
+
 
 
 ## 4. OOps! some error occured
 
 And if the status is anything other than 200 then it will return failure.html file.
 
-![Status Not ok/ Error Screenshot](./public/assets/Readme%20screenshots/Error.png)
+![image](https://github.com/user-attachments/assets/ab41501d-10d8-469a-b77d-405d24a47d71)
+
 
 ## 5. Mailchimp API Dashboard
 
 The record/subscriber gets added on top of the list as highlighted in the image below.
 
-![Mailchimp Dashboard Screenshot](./public/assets/Readme%20screenshots/Mailchimp.png)
+![image](https://github.com/user-attachments/assets/50221315-9cbf-469c-836f-d2d1d6d9a79b)
 
 
-
-#### Note:
-> Also the API uses the appid and apikey which is turned down for security reasons and you can see the deployed 
-version on the given deployed link [here](https://shrouded-hamlet-34168.herokuapp.com/).
-- However you are free to give it a star, clone it, run it on your local pc.
-- As the API key is turned off this will work on your local pc flawlessly with some changes in app.js unless the dependencies are not depreciated.
